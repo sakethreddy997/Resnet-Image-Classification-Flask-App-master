@@ -28,7 +28,7 @@ model, graph = init()
 photos = UploadSet('photos', IMAGES)
 
 app.config['UPLOADED_PHOTOS_DEST'] = '.'
-configure_uploads(app, photos)
+configure_uploads(app, photos) 
 
 @app.route('/')
 def index():
